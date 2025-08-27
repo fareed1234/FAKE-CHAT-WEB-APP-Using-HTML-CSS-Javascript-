@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="chat-panel">
+      <div class="header">
+        <div class="avatar">FC</div>
+        <div class="hdr-info">
+          <div class="name">Fake Chat</div>
+          <div class="sub">Frontend only • Stored locally</div>
+        </div>
+        <div style="margin-left:auto" class="controls">
+          <button class="btn secondary" id="clearBtn" title="Clear conversation">Clear</button>
+        </div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <div class="input-area">
+        <textarea id="input" placeholder="Type a message and press Enter..."></textarea>
+        <button class="btn" id="sendBtn">Send</button>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div>
+        <div class="section-title">Quick presets</div>
+        <div class="presets" id="presets"></div>
+      </div>
+
+      <div>
+        <div class="section-title">About</div>
+        <div class="small">
+          This is a frontend-only fake chat. Messages are saved in <code>localStorage</code>.
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
